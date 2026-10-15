@@ -1,0 +1,15 @@
+{
+  // Fairplug remote MCP on Cloudflare Workers FREE plan. See README "Deploy (Cloudflare)".
+  "name": "fairplug-mcp",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat", "nodejs_compat_populate_process_env"],
+  "durable_objects": { "bindings": [{ "name": "HUB", "class_name": "FairplugHub" }] },
+  // SQLite-backed Durable Object (the only DO kind on the Free plan).
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["FairplugHub"] }],
+  "vars": {
+    // Set to your workers.dev URL after first deploy (tracked links are built from this).
+    "FAIRPLUG_REDIRECT_BASE": "https://fairplug-mcp.fairplughq.workers.dev"
+  }
+  // Secrets (never commit): wrangler secret put FAIRPLUG_SIGNING_SECRET | FAIRPLUG_MCP_TOKEN | FAIRPLUG_ADMIN_TOKEN
+}

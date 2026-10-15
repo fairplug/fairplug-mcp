@@ -1,0 +1,761 @@
+{
+  "_notice": "EXAMPLE / SEED DATA ONLY. All advertisers, offers, prices and URLs are fictional (*.example domains). Not real offers. Fields follow the Fairplug v0 Offer schema (03_v0_Product_Spec) plus is_example.",
+  "offers": [
+    {
+      "id": "off_trv000000001",
+      "advertiser_id": "adv_harbourstay",
+      "campaign_id": "cmp_harbourstay",
+      "source": "other",
+      "vertical": "travel",
+      "category_path": [
+        "hotels",
+        "europe",
+        "coastal_city"
+      ],
+      "title": "Harbour-view king room, free cancellation",
+      "summary": "4-star hotel in the old town, breakfast included.",
+      "attributes": {
+        "stars": 4,
+        "free_cancellation": true,
+        "breakfast": true
+      },
+      "availability": "in_stock",
+      "url": "https://harbourstay.example/rooms/king-harbour",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 6,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "DE",
+          "NZ",
+          "US",
+          "GB"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Sponsored",
+        "sponsor_name": "Harbour Stay Ltd",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 329,
+        "currency": "USD",
+        "unit": "per_night"
+      }
+    },
+    {
+      "id": "off_trv000000002",
+      "advertiser_id": "adv_alpinelodge",
+      "campaign_id": "cmp_alpinelodge",
+      "source": "other",
+      "vertical": "travel",
+      "category_path": [
+        "hotels",
+        "japan",
+        "niseko"
+      ],
+      "title": "Niseko ski lodge, 3 nights",
+      "summary": "Ski-in lodge with onsite onsen and shuttle.",
+      "attributes": {
+        "stars": 4,
+        "ski_in": true
+      },
+      "availability": "in_stock",
+      "url": "https://alpinelodge.example/niseko",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 8,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "DE",
+          "GB",
+          "CA"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Affiliate link",
+        "sponsor_name": "Alpine Lodge KK",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 410,
+        "currency": "USD",
+        "unit": "per_night"
+      }
+    },
+    {
+      "id": "off_trv000000003",
+      "advertiser_id": "adv_skyfare",
+      "campaign_id": "cmp_skyfare",
+      "source": "other",
+      "vertical": "travel",
+      "category_path": [
+        "flights",
+        "usa",
+        "europe"
+      ],
+      "title": "New York to London return fares",
+      "summary": "Compare-and-book return fares, flexible dates.",
+      "attributes": {
+        "cabin": "economy",
+        "flexible_dates": true
+      },
+      "availability": "in_stock",
+      "url": "https://skyfare.example/syd-lon",
+      "payout": {
+        "model": "cpa_fixed",
+        "amount": 25,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "NZ"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Ad",
+        "sponsor_name": "SkyFare Travel Ltd",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 1850,
+        "currency": "USD",
+        "unit": "one_time"
+      }
+    },
+    {
+      "id": "off_trv000000004",
+      "advertiser_id": "adv_roamsim",
+      "campaign_id": "cmp_roamsim",
+      "source": "other",
+      "vertical": "travel",
+      "category_path": [
+        "connectivity",
+        "esim"
+      ],
+      "title": "Europe travel eSIM, 10GB",
+      "summary": "Instant eSIM, no roaming fees, 30-day validity.",
+      "attributes": {
+        "data_gb": 10
+      },
+      "availability": "in_stock",
+      "url": "https://roamsim.example/europe-10gb",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 12,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "DE",
+          "GB",
+          "CA",
+          "NZ"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Affiliate link",
+        "sponsor_name": "RoamSIM Inc",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 19,
+        "currency": "USD",
+        "unit": "one_time"
+      }
+    },
+    {
+      "id": "off_trv000000005",
+      "advertiser_id": "adv_wheelsgo",
+      "campaign_id": "cmp_wheelsgo",
+      "source": "other",
+      "vertical": "travel",
+      "category_path": [
+        "car_rental",
+        "usa"
+      ],
+      "title": "Compact car rental, west coast USA",
+      "summary": "Free cancellation up to 48h; unlimited miles.",
+      "attributes": {
+        "free_cancellation": true,
+        "unlimited_miles": true
+      },
+      "availability": "in_stock",
+      "url": "https://wheelsgo.example/west-coast",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 5,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "DE",
+          "GB"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Sponsored",
+        "sponsor_name": "WheelsGo LLC",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 42,
+        "currency": "USD",
+        "unit": "per_night"
+      }
+    },
+    {
+      "id": "off_trv000000006",
+      "advertiser_id": "adv_trailtours",
+      "campaign_id": "cmp_trailtours",
+      "source": "other",
+      "vertical": "travel",
+      "category_path": [
+        "tours",
+        "new_zealand"
+      ],
+      "title": "Milford Sound day cruise and coach",
+      "summary": "Small-group day trip from Queenstown.",
+      "attributes": {
+        "group_size": 16
+      },
+      "availability": "in_stock",
+      "url": "https://trailtours.example/milford-day",
+      "payout": {
+        "model": "cpa_fixed",
+        "amount": 18,
+        "currency": "NZD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "NZ",
+          "DE",
+          "US"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Ad",
+        "sponsor_name": "Trail Tours NZ Ltd",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 285,
+        "currency": "NZD",
+        "unit": "one_time"
+      }
+    },
+    {
+      "id": "off_saa000000001",
+      "advertiser_id": "adv_tasklane",
+      "campaign_id": "cmp_tasklane",
+      "source": "partnerstack",
+      "vertical": "b2b_saas",
+      "category_path": [
+        "project_management"
+      ],
+      "title": "TaskLane Team plan",
+      "summary": "Kanban and timeline project tool for small teams.",
+      "attributes": {
+        "free_trial_days": 14,
+        "sso": false
+      },
+      "availability": "in_stock",
+      "url": "https://tasklane.example/pricing/team",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 30,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "DE",
+          "GB",
+          "CA",
+          "NZ"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Affiliate link",
+        "sponsor_name": "TaskLane Inc",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 10,
+        "currency": "USD",
+        "unit": "per_seat"
+      }
+    },
+    {
+      "id": "off_saa000000002",
+      "advertiser_id": "adv_mailpilot",
+      "campaign_id": "cmp_mailpilot",
+      "source": "impact",
+      "vertical": "b2b_saas",
+      "category_path": [
+        "email_marketing"
+      ],
+      "title": "MailPilot Growth plan",
+      "summary": "Email marketing and automation for startups.",
+      "attributes": {
+        "free_trial_days": 30
+      },
+      "availability": "in_stock",
+      "url": "https://mailpilot.example/growth",
+      "payout": {
+        "model": "cpa_fixed",
+        "amount": 60,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "GB",
+          "DE",
+          "CA"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Sponsored",
+        "sponsor_name": "MailPilot Ltd",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 29,
+        "currency": "USD",
+        "unit": "per_month"
+      }
+    },
+    {
+      "id": "off_saa000000003",
+      "advertiser_id": "adv_ledgerly",
+      "campaign_id": "cmp_ledgerly",
+      "source": "direct",
+      "vertical": "b2b_saas",
+      "category_path": [
+        "accounting",
+        "invoicing"
+      ],
+      "title": "Ledgerly invoicing for freelancers",
+      "summary": "Invoices, expenses and tax-ready reports.",
+      "attributes": {
+        "free_trial_days": 14
+      },
+      "availability": "in_stock",
+      "url": "https://ledgerly.example/freelancer",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 25,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "DE",
+          "NZ",
+          "GB"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Affiliate link",
+        "sponsor_name": "Ledgerly Ltd",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 15,
+        "currency": "USD",
+        "unit": "per_month"
+      }
+    },
+    {
+      "id": "off_saa000000004",
+      "advertiser_id": "adv_securevault",
+      "campaign_id": "cmp_securevault",
+      "source": "partnerstack",
+      "vertical": "b2b_saas",
+      "category_path": [
+        "security",
+        "password_manager"
+      ],
+      "title": "SecureVault Business",
+      "summary": "Team password manager with SSO and audit log.",
+      "attributes": {
+        "sso": true,
+        "free_trial_days": 14
+      },
+      "availability": "in_stock",
+      "url": "https://securevault.example/business",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 20,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "DE",
+          "GB",
+          "CA",
+          "NZ"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Ad",
+        "sponsor_name": "SecureVault Inc",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 4,
+        "currency": "USD",
+        "unit": "per_seat"
+      }
+    },
+    {
+      "id": "off_saa000000005",
+      "advertiser_id": "adv_devpipe",
+      "campaign_id": "cmp_devpipe",
+      "source": "impact",
+      "vertical": "b2b_saas",
+      "category_path": [
+        "developer_tools",
+        "ci_cd"
+      ],
+      "title": "DevPipe CI hosting",
+      "summary": "Hosted CI/CD with 6,000 free build minutes.",
+      "attributes": {
+        "free_tier": true
+      },
+      "availability": "in_stock",
+      "url": "https://devpipe.example/teams",
+      "payout": {
+        "model": "cpa_fixed",
+        "amount": 75,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "GB",
+          "DE",
+          "CA",
+          "NZ"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Sponsored",
+        "sponsor_name": "DevPipe Corp",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 25,
+        "currency": "USD",
+        "unit": "per_month"
+      }
+    },
+    {
+      "id": "off_saa000000006",
+      "advertiser_id": "adv_formcraft",
+      "campaign_id": "cmp_formcraft",
+      "source": "direct",
+      "vertical": "b2b_saas",
+      "category_path": [
+        "forms",
+        "surveys"
+      ],
+      "title": "FormCraft Pro",
+      "summary": "Forms, surveys and lead capture with CRM sync.",
+      "attributes": {
+        "free_trial_days": 14
+      },
+      "availability": "in_stock",
+      "url": "https://formcraft.example/pro",
+      "payout": {
+        "model": "cpl",
+        "amount": 5,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "DE",
+          "GB"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Affiliate link",
+        "sponsor_name": "FormCraft Ltd",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 19,
+        "currency": "USD",
+        "unit": "per_month"
+      }
+    },
+    {
+      "id": "off_ret000000001",
+      "advertiser_id": "adv_trekgear",
+      "campaign_id": "cmp_trekgear",
+      "source": "awin",
+      "vertical": "retail",
+      "category_path": [
+        "outdoor",
+        "footwear"
+      ],
+      "title": "TrekGear waterproof hiking boots",
+      "summary": "Leather waterproof boots, 2-year warranty.",
+      "attributes": {
+        "waterproof": true,
+        "warranty_years": 2
+      },
+      "availability": "in_stock",
+      "url": "https://trekgear.example/boots-wp",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 8,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "DE",
+          "GB",
+          "CA"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Affiliate link",
+        "sponsor_name": "TrekGear Co",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 189,
+        "currency": "USD",
+        "unit": "one_time"
+      }
+    },
+    {
+      "id": "off_ret000000002",
+      "advertiser_id": "adv_homebrew",
+      "campaign_id": "cmp_homebrew",
+      "source": "cj",
+      "vertical": "retail",
+      "category_path": [
+        "home",
+        "coffee"
+      ],
+      "title": "HomeBrew espresso machine",
+      "summary": "15-bar espresso machine with milk frother.",
+      "attributes": {
+        "bars": 15
+      },
+      "availability": "in_stock",
+      "url": "https://homebrew.example/espresso-15",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 7,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "DE",
+          "NZ"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Sponsored",
+        "sponsor_name": "HomeBrew Appliances Ltd",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 299,
+        "currency": "USD",
+        "unit": "one_time"
+      }
+    },
+    {
+      "id": "off_ret000000003",
+      "advertiser_id": "adv_deskwell",
+      "campaign_id": "cmp_deskwell",
+      "source": "impact",
+      "vertical": "retail",
+      "category_path": [
+        "home_office",
+        "furniture"
+      ],
+      "title": "Deskwell electric standing desk",
+      "summary": "Dual-motor sit-stand desk, 5-year warranty.",
+      "attributes": {
+        "motors": 2,
+        "warranty_years": 5
+      },
+      "availability": "in_stock",
+      "url": "https://deskwell.example/stand-desk",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 9,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "CA",
+          "DE"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Ad",
+        "sponsor_name": "Deskwell Inc",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 449,
+        "currency": "USD",
+        "unit": "one_time"
+      }
+    },
+    {
+      "id": "off_ret000000004",
+      "advertiser_id": "adv_pedalpro",
+      "campaign_id": "cmp_pedalpro",
+      "source": "awin",
+      "vertical": "retail",
+      "category_path": [
+        "sports",
+        "cycling"
+      ],
+      "title": "PedalPro commuter e-bike",
+      "summary": "250W e-bike, 80km range, mudguards and lights.",
+      "attributes": {
+        "range_km": 80
+      },
+      "availability": "in_stock",
+      "url": "https://pedalpro.example/commuter-e",
+      "payout": {
+        "model": "cpa_percent",
+        "amount": 4,
+        "currency": "USD",
+        "attribution_window_days": 30,
+        "validation_days": 45
+      },
+      "eligibility": {
+        "geo": [
+          "US",
+          "GB",
+          "DE"
+        ],
+        "requires_user_action": true
+      },
+      "disclosure": {
+        "label": "Affiliate link",
+        "sponsor_name": "PedalPro Ltd",
+        "material_connection": "Fairplug may be paid a commission if you buy through this link."
+      },
+      "status": "active",
+      "ads_eligible": true,
+      "is_example": true,
+      "price": {
+        "amount": 1399,
+        "currency": "USD",
+        "unit": "one_time"
+      }
+    }
+  ]
+}

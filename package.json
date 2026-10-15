@@ -1,0 +1,35 @@
+{
+  "name": "fairplug-mcp-server",
+  "version": "0.1.0",
+  "description": "Fairplug MCP server: disclosure-first sponsored offers for AI assistants. Stdio or streamable HTTP; free public sandbox. Early pilot.",
+  "type": "module",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "fairplug-mcp": "dist/src/server.js",
+    "fairplug": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "redirect": "node dist/src/redirect.js",
+    "start:http": "node dist/src/http.js",
+    "cli": "node dist/cli.js",
+    "test": "npm run build && node --test --test-concurrency=1 dist/test/",
+    "verify": "npm run build && node dist/scripts/verify.js",
+    "dev:worker": "wrangler dev --local",
+    "remote-check": "node dist/scripts/remote-check.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.151.0"
+  }
+}
