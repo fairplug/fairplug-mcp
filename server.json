@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.fairplug/fairplug-mcp",
+  "name": "io.github.FairPlugHQ/fairplug-mcp",
   "title": "Fairplug (sandbox)",
-  "description": "Disclosure-first sponsored offers for AI assistants. Free read-only sandbox with fictional data; early pilot.",
+  "description": "Disclosure-first sponsored offers for AI assistants. Free read-only sandbox, fictional data.",
   "repository": { "url": "https://github.com/fairplug/fairplug-mcp", "source": "github" },
   "version": "0.1.0",
   "websiteUrl": "https://github.com/fairplug/fairplug-mcp",
