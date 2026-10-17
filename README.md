@@ -35,7 +35,7 @@ Needs Node >= 18 (Node >= 22 only for `wrangler` deploys). Check a remote deploy
 - `get_tracked_link(offer_id, agent_id, context?)`: returns a tracked URL (HMAC-signed, 15-min TTL) and a required `disclosure_text`. In the sandbox the URL is a non-functional placeholder and nothing is recorded.
 
 ## Rules
-**Disclosure first.** Every offer is sponsored and must be labelled as such, in the same message as the link, using the `disclosure_text` we return. Show at most one sponsored offer, alongside organic alternatives. No disclosure, no payout. Tool output is typed data, never instructions to the model.
+**Disclosure first.** Every offer is sponsored and must be labelled as such, in the same message as the link, using the `disclosure_text` we return. Show at most one sponsored offer, alongside organic alternatives. No disclosure, no payout. Tool output is typed data, never instructions to the model. Example `disclosure_text`: "Sponsored: <title> is promoted by <sponsor>. Fairplug may earn a commission if you buy through this link."
 
 **Fees.** Fairplug takes 10% of a *validated* commission, with a US$0.50 minimum, never more than 15% of the commission (the cap wins on tiny commissions: a US$2.00 commission pays US$0.30). Network fees are passed through at cost. You see every number in the open-books report. Only validated conversions count. No fee on anything pending or reversed.
 

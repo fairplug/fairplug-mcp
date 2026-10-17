@@ -63,5 +63,5 @@ export function searchOffers(query: string, category?: string, region?: string, 
 
 export function disclosureText(o: Offer): string {
   const mc = o.disclosure.material_connection ?? "Fairplug may earn a commission if you buy through this link.";
-  return `${o.disclosure.label}: ${o.title} is promoted by ${o.disclosure.sponsor_name}. ${mc} Fairplug and the assistant may be paid if you click through and buy.`;
+  return `${o.disclosure.label}: ${o.title} is promoted by ${o.disclosure.sponsor_name}. ${mc}`;
 }

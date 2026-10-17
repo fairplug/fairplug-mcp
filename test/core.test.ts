@@ -55,6 +55,7 @@ test("tools: search logs, link has disclosure, bad inputs rejected", () => {
   assert.ok(s.count > 0 && s.notice.includes("EXAMPLE"));
   const l = getTrackedLinkTool({ offer_id: s.offers[0].offer_id, agent_id: "t_agent" });
   assert.match(l.click_id, /^clk_/); assert.ok(l.disclosure_text.includes("Sponsored") || l.disclosure_text.includes("Ad") || l.disclosure_text.includes("Affiliate"));
+  assert.ok(!/assistant may be paid/.test(l.disclosure_text) && (l.disclosure_text.match(/\./g) || []).length === 2, "disclosure is one clear statement, no duplicate");
   assert.throws(() => getTrackedLinkTool({ offer_id: "off_x", agent_id: "t_agent" }));
   assert.throws(() => getTrackedLinkTool({ offer_id: s.offers[0].offer_id, agent_id: "bad agent!" }));
   const ev = readEvents();
